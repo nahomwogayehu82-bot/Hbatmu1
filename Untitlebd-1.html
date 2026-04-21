@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - Habtamu & Lidiya</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Playfair+Display:ital,wght@0,400;1,600&family=Montserrat:wght@300;400&family=Noto+Sans+Ethiopic:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --gold: #c5a059;
+            --dark: #1a1a1a;
+            --white: #ffffff;
+            --cream: #fdfcf8;
+            --soft-gold: rgba(197, 160, 89, 0.1);
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--cream);
+            color: var(--dark);
+            scroll-behavior: smooth;
+        }
+
+        .amharic { font-family: 'Noto Sans Ethiopic', sans-serif; }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.45)), 
+                        url('DSC01715-2.jpg') no-repeat center center;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-content h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: clamp(3.5rem, 12vw, 6rem);
+            margin: 0;
+            text-shadow: 2px 2px 20px rgba(0,0,0,0.7);
+        }
+
+        .hero-names {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.1rem;
+            letter-spacing: 6px;
+            text-transform: uppercase;
+            margin-top: 15px;
+            border-top: 1px solid rgba(255,255,255,0.5);
+            border-bottom: 1px solid rgba(255,255,255,0.5);
+            padding: 10px 0;
+            display: inline-block;
+        }
+
+        /* Scripture Styles */
+        .scripture-section {
+            padding: 80px 20px;
+            background: var(--soft-gold);
+            text-align: center;
+            border-top: 1px solid var(--gold);
+            border-bottom: 1px solid var(--gold);
+        }
+
+        .bible-verse {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .verse-en {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 1.4rem;
+            color: #444;
+            margin-bottom: 15px;
+        }
+
+        .verse-am {
+            font-size: 1.3rem;
+            color: var(--gold);
+            margin-bottom: 10px;
+        }
+
+        .reference {
+            font-weight: 700;
+            letter-spacing: 2px;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+        }
+
+        /* Message Section */
+        .message-section {
+            padding: 100px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .message-section h2 {
+            font-family: 'Playfair Display', serif;
+            color: var(--gold);
+            font-size: 2.8rem;
+            margin-bottom: 40px;
+        }
+
+        .message-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+        }
+
+        /* Polaroid Gallery */
+        .gallery {
+            padding: 80px 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            background: #fff;
+        }
+
+        .polaroid {
+            background: white;
+            padding: 15px 15px 60px 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            transition: 0.4s;
+            max-width: 300px;
+        }
+
+        .polaroid img { width: 100%; height: 400px; object-fit: cover; }
+        .polaroid:hover { transform: scale(1.05); z-index: 5; }
+
+        /* Traditional Section */
+        .traditional-feature {
+            padding: 80px 5%;
+            background: var(--dark);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .trad-img { width: 100%; max-width: 400px; border: 1px solid var(--gold); padding: 10px; }
+
+        footer {
+            padding: 80px 20px;
+            text-align: center;
+            background: var(--cream);
+        }
+
+        .footer-names { font-family: 'Dancing Script', cursive; font-size: 3rem; color: var(--gold); }
+
+        @media (max-width: 768px) {
+            .message-grid { grid-template-columns: 1fr; }
+            .hero-content h1 { font-size: 3rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Thank You</h1>
+            <div class="hero-names">Habtamu Mulatu & Lidiya Amare</div>
+            <div class="amharic" style="font-size: 1.5rem; margin-top: 20px; opacity: 0.9;">እናመሰግናለን</div>
+        </div>
+    </section>
+
+    <section class="scripture-section">
+        <div class="bible-verse">
+            <p class="verse-am amharic">"እንግዲህ እምነት ተስፋ ፍቅር እነዚህ ሦስቱ ጸንተው ይኖራሉ፤ ከእነዚህም የሚበልጠው ፍቅር ነው።"</p>
+            <p class="verse-en">"And now these three remain: faith, hope and love. But the greatest of these is love."</p>
+            <p class="reference">— 1 Corinthians 13:13 | 1ኛ ቆሮንቶስ 13:13</p>
+        </div>
+    </section>
+
+    <section class="message-section">
+        <h2>Our Deepest Gratitude</h2>
+        <div class="message-grid">
+            <div class="amharic" style="font-size: 1.1rem; line-height: 1.8;">
+                ለተወደዳችሁ ቤተሰቦቻችን እና ጓደኞቻችን፡ የጋብቻ ስነ-ስርዓታችንን ከእኛ ጋር አብራችሁ ስላከበራችሁልን ከልብ እናመሰግናለን። የእናንተ መገኘት ቀኑን ልዩ እና የማይረሳ አድርጎታል። ፈጣሪ በነገራችሁ ሁሉ ይባርካችሁ::
+            </div>
+            <div style="font-size: 1.1rem; line-height: 1.8;">
+                To our beloved family and friends, thank you for joining us as we celebrated our union. Your presence made our wedding day unforgettable and filled our hearts with joy. May God bless you abundantly.
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <div class="polaroid" style="transform: rotate(-2deg);"><img src="DSC01110-2.jpg"></div>
+        <div class="polaroid" style="transform: rotate(2deg);"><img src="DSC01550-2.jpg"></div>
+        <div class="polaroid" style="transform: rotate(-1deg);"><img src="Screenshot_20260310_073102_Gallery.jpg"></div>
+    </section>
+
+    <section class="scripture-section" style="background: white;">
+        <div class="bible-verse">
+            <p class="verse-am amharic">"ከአንድ ይልቅ ሁለት መሆን ይሻላል፤ ለድካማቸው ጥሩ ዋጋ አላቸውና።"</p>
+            <p class="verse-en">"Two are better than one, because they have a good return for their labor."</p>
+            <p class="reference">— Ecclesiastes 4:9 | መክብብ 4:9</p>
+        </div>
+    </section>
+
+    <section class="traditional-feature">
+        <div style="max-width: 500px; padding: 20px;">
+            <h3 class="amharic" style="color: var(--gold); font-size: 2rem;">ውብ ባህላችን</h3>
+            <p class="amharic" style="opacity: 0.9; font-size: 1.1rem;">ባህላችን የማንነታችን መገለጫ ነው:: በሰርጋችን ቀን ወጋችንን እና ስርአታችንን ጠብቀን ከእናንተ ጋር ማሳለፋችን ትልቅ ክብር ይሰጠናል።</p>
+        </div>
+        <img src="Screenshot_20260310_071159_Gallery.jpg" class="trad-img">
+    </section>
+
+    <footer>
+        <div class="footer-names">Habtamu & Lidiya</div>
+        <p style="letter-spacing: 3px; font-size: 0.8rem; margin-top: 20px; color: #888;">ESTABLISHED 2026</p>
+    </footer>
+
+</body>
+</html>
